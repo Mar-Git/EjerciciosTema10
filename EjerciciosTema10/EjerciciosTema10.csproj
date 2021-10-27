@@ -128,9 +128,6 @@
     <Compile Include="Models\clsPersona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewsModels\Ejercicio2VM.cs" />
-    <Compile Include="Views\Ejercicio3.xaml.cs">
-      <DependentUpon>Ejercicio3.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -157,10 +154,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Ejercicio2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Ejercicio3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

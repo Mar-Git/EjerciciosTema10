@@ -17,6 +17,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"/>
@@ -25,8 +26,10 @@
             
             <TextBlock Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" Text="Nombre"/>
             <TextBlock Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Text="Apellidos"/>
+            <TextBlock Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" Text="nombre nuevo"/>
             <TextBox Grid.Column="1" Grid.Row="0" Name="txbNombre" Margin="20" Text="{Binding OPersona.Nombre, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             <TextBox Grid.Column="1" Grid.Row="1" Name="txbApellidos" Margin="20" Text="{Binding OPersona.Apellido, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Grid.Column="1" Grid.Row="2" Name="txbAñadido" Margin="20" Text="{Binding ElementName=txbNombre, Path=Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
         </Grid>
 
     </RelativePanel>
