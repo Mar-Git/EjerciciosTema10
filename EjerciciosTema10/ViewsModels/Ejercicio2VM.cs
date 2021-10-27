@@ -9,8 +9,8 @@ namespace EjerciciosTema10.ViewsModels
 {
     class Ejercicio2VM
     {
-        clsPersona oPersona;
+        clsPersona oPersona = new clsPersona();
 
-        public clsPersona OPersona1 { get => oPersona; set => oPersona = value; }
+        public clsPersona OPersona { get => oPersona; set => oPersona = value; }
     }
 }
